@@ -6,7 +6,7 @@ def seleccion():
     opcion = input("Escribe opción (1-2): ")
 
     if opcion == "2":
-        print("sample text")
+        print("https://en.wikipedia.org/wiki/Blackjack")
 
     elif opcion == "1":
         print("¡Juguemos!")
