@@ -1,11 +1,15 @@
 from player import player_start
+from slot import slot_play
 
 # Le da a elegir al jugador y carga una cosa dependiendo de su opción
 def seleccion():
 
-    opcion = input("Escribe opción (1-2): ")
+    opcion = input("Escribe opción (1-2-3): ")
 
-    if opcion == "2":
+    if opcion == "3":
+        slot_play()
+
+    elif opcion == "2":
         print("https://en.wikipedia.org/wiki/Blackjack")
 
     elif opcion == "1":
@@ -20,7 +24,7 @@ def seleccion():
 def menu():
 
     print("Bienvenido al Blackjack, ¿esta es tu primera vez jugando?")
-    print("No - 1 \n Si - 2")
+    print("No - 1 \n Si - 2 \n Quiero jugar a la tragaperras - 3")
     seleccion()
 
 
